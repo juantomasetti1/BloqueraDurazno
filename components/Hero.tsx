@@ -3,8 +3,8 @@ import { waLink } from "./waLink";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-concrete-900 texture-concrete min-h-[88vh] flex items-center">
-      {/* Background pattern — abstract block grid */}
+    <section className="relative overflow-hidden bg-brand texture-concrete min-h-[88vh] flex items-center">
+      {/* Background pattern */}
       <div
         aria-hidden
         className="absolute inset-0 opacity-10"
@@ -15,20 +15,20 @@ export default function Hero() {
       />
 
       {/* Accent bar */}
-      <div className="absolute left-0 top-0 h-full w-2 bg-brand" />
+      <div className="absolute left-0 top-0 h-full w-2 bg-cream" />
 
       <div className="relative max-w-6xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center w-full">
         {/* Text */}
         <div>
-          <p className="text-brand font-display text-lg tracking-widest uppercase mb-3">
+          <p className="text-cream font-display text-lg tracking-widest uppercase mb-3">
             Durazno, Uruguay
           </p>
           <h1 className="text-white text-6xl sm:text-7xl md:text-8xl leading-none mb-6">
             Bloques de<br />
-            <span className="text-brand">Hormigón</span><br />
+            <span className="text-cream">Hormigón</span><br />
             directos de<br />fábrica
           </h1>
-          <p className="text-concrete-300 text-lg mb-8 max-w-md leading-relaxed">
+          <p className="text-cream-dark text-lg mb-8 max-w-md leading-relaxed">
             Fabricación y venta de bloques de hormigón en Durazno. Calidad
             garantizada, entrega en zona y precios directos sin intermediarios.
           </p>
@@ -47,7 +47,7 @@ export default function Hero() {
             </a>
             <a
               href="#catalogo"
-              className="border-2 border-brand text-brand hover:bg-brand hover:text-white font-bold px-8 py-4 text-lg uppercase tracking-wider transition-colors"
+              className="border-2 border-cream text-cream hover:bg-cream hover:text-brand font-bold px-8 py-4 text-lg uppercase tracking-wider transition-colors"
             >
               Ver catálogo
             </a>
@@ -57,33 +57,32 @@ export default function Hero() {
         {/* Visual block illustration */}
         <div className="hidden md:flex justify-center items-center">
           <div className="relative">
-            {/* Stacked blocks visual */}
             {[0, 1, 2].map((row) => (
               <div key={row} className="flex gap-2 mb-2" style={{ marginLeft: row * 20 }}>
                 {[0, 1, 2].map((col) => (
                   <div
                     key={col}
-                    className="w-28 h-14 border-2 border-concrete-600 bg-concrete-700 relative overflow-hidden"
+                    className="w-28 h-14 border-2 border-brand-light bg-brand-dark relative overflow-hidden"
                     style={{ opacity: 1 - row * 0.15 - col * 0.05 }}
                   >
-                    <div className="absolute inset-x-0 top-0 h-1 bg-concrete-500" />
-                    <div className="absolute left-1/3 top-0 bottom-0 w-px bg-concrete-600" />
-                    <div className="absolute left-2/3 top-0 bottom-0 w-px bg-concrete-600" />
+                    <div className="absolute inset-x-0 top-0 h-1 bg-brand-light" />
+                    <div className="absolute left-1/3 top-0 bottom-0 w-px bg-brand-light opacity-50" />
+                    <div className="absolute left-2/3 top-0 bottom-0 w-px bg-brand-light opacity-50" />
                   </div>
                 ))}
               </div>
             ))}
-            <div className="absolute -bottom-4 -right-4 bg-brand text-white font-display text-2xl px-4 py-2 uppercase tracking-widest">
-              Desde 1990
+            <div className="absolute -bottom-4 -right-4 bg-cream text-brand font-display text-2xl px-4 py-2 uppercase tracking-widest">
+              Construyendo tu futuro
             </div>
           </div>
         </div>
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-concrete-500 text-xs uppercase tracking-widest flex flex-col items-center gap-2">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-cream-dark text-xs uppercase tracking-widest flex flex-col items-center gap-2">
         <span>Ver catálogo</span>
-        <div className="w-px h-8 bg-concrete-600 animate-bounce" />
+        <div className="w-px h-8 bg-cream-dark animate-bounce" />
       </div>
     </section>
   );

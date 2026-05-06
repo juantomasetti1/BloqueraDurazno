@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard";
 
 export default function Catalog() {
   return (
-    <section id="catalogo" className="bg-concrete-50 py-20">
+    <section id="catalogo" className="bg-cream-light py-20">
       <div className="max-w-6xl mx-auto px-4">
         {/* Section header */}
         <div className="mb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-4">

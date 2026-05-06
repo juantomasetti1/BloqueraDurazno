@@ -6,7 +6,7 @@ export default function Contact() {
     <section id="contacto" className="bg-brand py-20">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <h2 className="text-white text-5xl md:text-7xl mb-4">¿Listo para cotizar?</h2>
-        <p className="text-amber-100 text-lg mb-10 max-w-xl mx-auto">
+        <p className="text-cream text-lg mb-10 max-w-xl mx-auto">
           Escribinos con la cantidad y el tipo de bloque que necesitás.
           Respondemos rápido.
         </p>
@@ -26,20 +26,20 @@ export default function Contact() {
           </a>
           <a
             href={`tel:${SITE.phone}`}
-            className="border-2 border-white text-white hover:bg-white hover:text-brand font-bold px-10 py-5 text-xl uppercase tracking-wider transition-colors"
+            className="border-2 border-cream text-cream hover:bg-cream hover:text-brand font-bold px-10 py-5 text-xl uppercase tracking-wider transition-colors"
           >
             📞 Llamar
           </a>
         </div>
 
-        <p className="text-amber-100 text-sm mt-8 opacity-80">{SITE.hours}</p>
+        <p className="text-cream-dark text-sm mt-8 opacity-80">{SITE.hours}</p>
 
         {SITE.facebook && (
           <a
             href={SITE.facebook}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-4 text-amber-200 hover:text-white underline text-sm transition-colors"
+            className="inline-block mt-4 text-cream hover:text-white underline text-sm transition-colors"
           >
             Seguinos en Facebook
           </a>

@@ -16,7 +16,7 @@ export default function Delivery() {
           <ul className="space-y-4">
             {DELIVERY.map((item) => (
               <li key={item} className="flex items-start gap-3">
-                <span className="mt-1 w-5 h-5 bg-brand text-white flex items-center justify-center text-xs flex-shrink-0">
+                <span className="mt-1 w-5 h-5 bg-brand text-cream flex items-center justify-center text-xs flex-shrink-0">
                   ✓
                 </span>
                 <span className="text-concrete-700 text-base">{item}</span>
@@ -35,8 +35,8 @@ export default function Delivery() {
         </div>
 
         {/* Zone info box */}
-        <div className="bg-concrete-50 border-l-4 border-brand p-8">
-          <h3 className="font-display text-3xl text-concrete-900 mb-6">Zona de cobertura</h3>
+        <div className="bg-cream-light border-l-4 border-brand p-8">
+          <h3 className="font-display text-3xl text-brand mb-6">Zona de cobertura</h3>
           <div className="space-y-3 text-concrete-700">
             {[
               "Durazno ciudad",

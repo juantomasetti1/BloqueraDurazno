@@ -21,9 +21,14 @@ module.exports = {
           900: "#242320",
         },
         brand: {
-          DEFAULT: "#D97706",   // amber-600 — warm, visible
-          dark:    "#B45309",
-          light:   "#FCD34D",
+          DEFAULT: "#1b3a6b",
+          dark:    "#142d53",
+          light:   "#2a5098",
+        },
+        cream: {
+          DEFAULT: "#e8dcc8",
+          light:   "#f5efe3",
+          dark:    "#d4c9b0",
         },
         green: {
           whatsapp: "#25D366",

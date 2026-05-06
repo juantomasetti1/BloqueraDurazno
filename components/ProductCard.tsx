@@ -7,7 +7,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <div className="bg-white border border-concrete-200 overflow-hidden group hover:shadow-lg transition-shadow flex flex-col">
       {/* Image / placeholder */}
-      <div className="relative bg-concrete-100 h-44 flex items-center justify-center overflow-hidden">
+      <div className="relative bg-concrete-100 h-48 flex items-center justify-center overflow-hidden">
         {product.image ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={product.image} alt={product.name} className="object-cover w-full h-full" />
@@ -15,7 +15,7 @@ export default function ProductCard({ product }: { product: Product }) {
           <BlockPlaceholder />
         )}
         {product.featured && (
-          <span className="absolute top-3 left-3 bg-brand text-white text-xs font-bold px-2 py-1 uppercase tracking-wider">
+          <span className="absolute top-3 left-3 bg-brand text-cream text-xs font-bold px-2 py-1 uppercase tracking-wider">
             Más vendido
           </span>
         )}
@@ -23,17 +23,25 @@ export default function ProductCard({ product }: { product: Product }) {
 
       {/* Content */}
       <div className="p-5 flex flex-col flex-1">
-        <h3 className="font-display text-2xl text-concrete-900 mb-1">{product.name}</h3>
+        <h3 className="font-display text-2xl text-brand mb-1">{product.name}</h3>
         <p className="text-concrete-500 text-xs uppercase tracking-wider mb-1">
           Medidas (L×H×A): <strong className="text-concrete-700">{product.measures} cm</strong>
         </p>
         <p className="text-concrete-600 text-sm mb-4 flex-1">{product.use}</p>
 
-        <div className="flex items-center justify-between mt-auto pt-4 border-t border-concrete-100">
+        <div className="flex items-end justify-between mt-auto pt-4 border-t border-concrete-100">
           <div>
-            <p className="text-xs text-concrete-400 uppercase tracking-wider">Precio c/u</p>
-            {product.price ? (
-              <p className="font-display text-3xl text-brand">{product.price}</p>
+            {product.pricePuesto ? (
+              <div className="space-y-1">
+                <div>
+                  <p className="text-xs text-concrete-400 uppercase tracking-wider leading-none">Puesto en obra</p>
+                  <p className="font-display text-2xl text-brand leading-tight">{product.pricePuesto}</p>
+                </div>
+                <div>
+                  <p className="text-xs text-concrete-400 uppercase tracking-wider leading-none">A levantar</p>
+                  <p className="font-display text-2xl text-brand leading-tight">{product.priceLevantar}</p>
+                </div>
+              </div>
             ) : (
               <p className="font-display text-2xl text-concrete-500">Consultar</p>
             )}
@@ -59,11 +67,11 @@ export default function ProductCard({ product }: { product: Product }) {
 function BlockPlaceholder() {
   return (
     <svg width="120" height="60" viewBox="0 0 120 60" fill="none" className="opacity-30">
-      <rect x="1" y="1" width="118" height="58" rx="2" stroke="#706e66" strokeWidth="2" fill="#d0cdc4"/>
-      <line x1="40" y1="1" x2="40" y2="59" stroke="#706e66" strokeWidth="1.5"/>
-      <line x1="80" y1="1" x2="80" y2="59" stroke="#706e66" strokeWidth="1.5"/>
-      <line x1="1" y1="20" x2="119" y2="20" stroke="#706e66" strokeWidth="1"/>
-      <line x1="1" y1="40" x2="119" y2="40" stroke="#706e66" strokeWidth="1"/>
+      <rect x="1" y="1" width="118" height="58" rx="2" stroke="#1b3a6b" strokeWidth="2" fill="#e8dcc8"/>
+      <line x1="40" y1="1" x2="40" y2="59" stroke="#1b3a6b" strokeWidth="1.5"/>
+      <line x1="80" y1="1" x2="80" y2="59" stroke="#1b3a6b" strokeWidth="1.5"/>
+      <line x1="1" y1="20" x2="119" y2="20" stroke="#1b3a6b" strokeWidth="1"/>
+      <line x1="1" y1="40" x2="119" y2="40" stroke="#1b3a6b" strokeWidth="1"/>
     </svg>
   );
 }

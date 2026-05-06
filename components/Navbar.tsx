@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { SITE } from "@/data/site";
 import { waLink } from "./waLink";
@@ -15,12 +16,18 @@ const links = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-50 bg-concrete-900 shadow-lg">
-      <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-14">
+    <header className="sticky top-0 z-50 bg-brand shadow-lg">
+      <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="#" className="flex items-center gap-2">
-          <span className="text-brand text-2xl">▪</span>
-          <span className="font-display text-white text-xl tracking-widest uppercase">
+        <Link href="#" className="flex items-center gap-3">
+          <Image
+            src="/images/logo.jpeg"
+            alt="Bloquera La Cadena"
+            width={44}
+            height={44}
+            className="rounded-full object-cover"
+          />
+          <span className="font-display text-cream text-xl tracking-widest uppercase">
             {SITE.name}
           </span>
         </Link>
@@ -31,7 +38,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-concrete-300 hover:text-brand transition-colors font-medium uppercase tracking-wider text-xs"
+              className="text-cream hover:text-white transition-colors font-medium uppercase tracking-wider text-xs"
             >
               {l.label}
             </a>
@@ -48,25 +55,25 @@ export default function Navbar() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden text-white p-2"
+          className="md:hidden text-cream p-2"
           onClick={() => setOpen(!open)}
           aria-label="Menú"
         >
-          <div className={`w-6 h-0.5 bg-white mb-1.5 transition-transform ${open ? "rotate-45 translate-y-2" : ""}`} />
-          <div className={`w-6 h-0.5 bg-white mb-1.5 transition-opacity ${open ? "opacity-0" : ""}`} />
-          <div className={`w-6 h-0.5 bg-white transition-transform ${open ? "-rotate-45 -translate-y-2" : ""}`} />
+          <div className={`w-6 h-0.5 bg-cream mb-1.5 transition-transform ${open ? "rotate-45 translate-y-2" : ""}`} />
+          <div className={`w-6 h-0.5 bg-cream mb-1.5 transition-opacity ${open ? "opacity-0" : ""}`} />
+          <div className={`w-6 h-0.5 bg-cream transition-transform ${open ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-concrete-800 border-t border-concrete-700 px-4 py-4 flex flex-col gap-4">
+        <div className="md:hidden bg-brand-dark border-t border-brand-light px-4 py-4 flex flex-col gap-4">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="text-concrete-200 font-medium uppercase tracking-wider text-sm"
+              className="text-cream font-medium uppercase tracking-wider text-sm"
             >
               {l.label}
             </a>
