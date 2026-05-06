@@ -31,7 +31,7 @@ export const PRODUCTS: Product[] = [
     id: "b12",
     name: "Bloque estándar 12",
     measures: "39 × 19 × 12",
-    use: "Paredes interiores y divisorias",
+    use: "Paredes interiores",
     price: "$120",
     image: null,
     featured: true,
