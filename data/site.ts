@@ -97,10 +97,10 @@ export const PRODUCTS: Product[] = [
 ];
 
 export const PAYMENTS = [
-  { icon: "💵", label: "Efectivo" },
-  { icon: "📲", label: "Transferencia bancaria" },
-  { icon: "💙", label: "Mercado Pago" },
-  { icon: "💳", label: "POS / Postnet" },
+  { label: "Efectivo" },
+  { label: "Transferencia bancaria" },
+  { label: "Mercado Pago" },
+  { label: "POS / Postnet" },
 ];
 
 export const DELIVERY = [
