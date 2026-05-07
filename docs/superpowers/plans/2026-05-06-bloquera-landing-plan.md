@@ -267,28 +267,55 @@ git commit -m "feat: update Delivery heading to 'Llegamos a pie de obra'"
 
 ---
 
-### Task 5: Actualizar `Footer.tsx` — agregar fundador
+### Task 5: Actualizar `Footer.tsx` — agregar fundador y crédito Scalerics
 
 **Files:**
 - Modify: `components/Footer.tsx`
 
-- [ ] **Step 1: Agregar la línea del fundador**
+- [ ] **Step 1: Reemplazar el componente completo**
 
-En `components/Footer.tsx`, reemplazar el bloque de derecha:
-
-```tsx
-// ANTES:
-<p className="text-center">{SITE.address}</p>
-<p>© {new Date().getFullYear()} — Todos los derechos reservados</p>
-```
+Reemplazar todo el contenido de `components/Footer.tsx`:
 
 ```tsx
-// DESPUÉS:
-<div className="text-center space-y-1">
-  <p>{SITE.address}</p>
-  <p className="text-xs opacity-60">Fundada por José Ávila</p>
-</div>
-<p>© {new Date().getFullYear()} — Todos los derechos reservados</p>
+import Image from "next/image";
+import { SITE } from "@/data/site";
+
+export default function Footer() {
+  return (
+    <footer className="bg-brand-dark border-t border-brand py-8">
+      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-cream-dark text-sm">
+        <div className="flex items-center gap-3">
+          <Image
+            src="/images/logo.jpeg"
+            alt="Bloquera La Cadena"
+            width={36}
+            height={36}
+            className="rounded-full object-cover"
+          />
+          <span className="font-display text-cream uppercase tracking-widest">{SITE.name}</span>
+        </div>
+        <div className="text-center space-y-1">
+          <p>{SITE.address}</p>
+          <p className="text-xs opacity-60">Fundada por José Ávila</p>
+        </div>
+        <div className="text-center space-y-1">
+          <p>© {new Date().getFullYear()} — Todos los derechos reservados</p>
+          <p className="text-xs opacity-50">
+            Diseño web por{" "}
+            <a
+              href="https://www.scalerics.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 underline underline-offset-2"
+            >
+              Scalerics
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
 ```
 
 - [ ] **Step 2: Verificar**
@@ -303,7 +330,7 @@ Expected: sin errores.
 
 ```bash
 git add components/Footer.tsx
-git commit -m "feat: add founder attribution to Footer"
+git commit -m "feat: add founder attribution and Scalerics credit to Footer"
 ```
 
 ---
