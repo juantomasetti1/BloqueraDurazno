@@ -1,5 +1,6 @@
 import { PRODUCTS } from "@/data/site";
 import ProductCard from "./ProductCard";
+import { waLink } from "./waLink";
 
 export default function Catalog() {
   return (
@@ -31,7 +32,7 @@ export default function Catalog() {
         <p className="text-center text-concrete-500 text-sm mt-10">
           ¿Necesitás un producto que no está en el catálogo?{" "}
           <a
-            href="https://wa.me/59899000000"
+            href={waLink("Hola! Consulto por un producto que no está en el catálogo.")}
             target="_blank"
             rel="noopener noreferrer"
             className="text-brand font-semibold hover:underline"
