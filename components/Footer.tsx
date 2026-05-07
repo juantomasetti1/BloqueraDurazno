@@ -27,7 +27,7 @@ export default function Footer() {
               href="https://www.scalerics.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-80 underline underline-offset-2"
+              className="hover:opacity-80 underline underline-offset-2 focus-visible:ring-2 focus-visible:ring-cream focus-visible:outline-none rounded-sm"
             >
               Scalerics
             </a>
