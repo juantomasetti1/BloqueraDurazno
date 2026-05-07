@@ -10,6 +10,7 @@ export default function Hero() {
         src="/images/WhatsApp Image 2026-05-05 at 11.33.38.jpeg"
         alt=""
         fill
+        sizes="100vw"
         className="object-cover"
         priority
       />
@@ -38,6 +39,7 @@ export default function Hero() {
               src="/images/logo.jpeg"
               alt={SITE.name}
               fill
+              sizes="80px"
               className="object-cover"
             />
           </div>
