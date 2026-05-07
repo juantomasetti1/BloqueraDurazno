@@ -8,9 +8,9 @@ export default function Delivery() {
         {/* Text */}
         <div>
           <p className="text-brand font-display text-base tracking-widest uppercase mb-2">
-            Logística
+            Entregas & Logística
           </p>
-          <h2 className="text-concrete-900 text-5xl md:text-6xl mb-6">Entregas</h2>
+          <h2 className="text-concrete-900 text-5xl md:text-6xl mb-6">Llegamos a pie de obra</h2>
           <div className="w-16 h-1 bg-brand mb-8" />
 
           <ul className="space-y-4">
