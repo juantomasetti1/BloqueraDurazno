@@ -4,16 +4,16 @@
 
 export const SITE = {
   name: 'Bloquera "La Cadena"',
-  tagline: "Bloques de hormigón directos de fábrica",
+  tagline: "Calidad que construye. Entrega que cumple.",
   phone: "092437871",
   whatsapp: "59892437871",
   whatsappMsg: "Hola! Consulto por bloques de hormigón.",
-  address: "Durazno, Uruguay",
+  address: "Paso la Cadena, Durazno, Uruguay",
   mapEmbed:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.0!2d-56.5226!3d-33.3694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDIyJzA5LjkiUyA1NsKwMzEnMjEuNCJX!5e0!3m2!1ses!2suy!4v1680000000000",
   hours: "Lun–Sáb: 8:00 a 17:00",
   facebook: "https://facebook.com/",
-  zone: "Durazno y zona",
+  zone: "Durazno ciudad y zona rural",
 };
 
 export type Product = {
@@ -104,8 +104,8 @@ export const PAYMENTS = [
 ];
 
 export const DELIVERY = [
-  "Entrega en Durazno ciudad y zona rural",
-  "Coordinación por WhatsApp",
-  "Flete propio para volúmenes grandes",
-  "También retiro en fábrica",
+  "Entrega a pie de obra en Durazno ciudad y zona",
+  "Coordinación rápida por WhatsApp",
+  "Flete propio para grandes volúmenes",
+  "Retiro en fábrica en Paso la Cadena",
 ];
