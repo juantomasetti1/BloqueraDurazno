@@ -15,8 +15,24 @@ export default function Footer() {
           />
           <span className="font-display text-cream uppercase tracking-widest">{SITE.name}</span>
         </div>
-        <p className="text-center">{SITE.address}</p>
-        <p>© {new Date().getFullYear()} — Todos los derechos reservados</p>
+        <div className="text-center space-y-1">
+          <p>{SITE.address}</p>
+          <p className="text-xs opacity-60">Fundada por José Ávila</p>
+        </div>
+        <div className="text-center space-y-1">
+          <p>© {new Date().getFullYear()} — Todos los derechos reservados</p>
+          <p className="text-xs opacity-50">
+            Diseño web por{" "}
+            <a
+              href="https://www.scalerics.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 underline underline-offset-2"
+            >
+              Scalerics
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
