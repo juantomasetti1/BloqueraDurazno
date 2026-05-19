@@ -24,9 +24,20 @@ export default function Hero() {
 
       {/* Contenido */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-20 md:py-28 w-full">
-        <p className="text-cream font-display text-sm tracking-widest uppercase mb-8">
-          Paso la Cadena, Durazno
-        </p>
+        <div className="flex items-center gap-4 mb-8">
+          <div className="relative w-20 h-20 rounded-full overflow-hidden border-4 border-cream flex-shrink-0">
+            <Image
+              src="/images/logo.jpeg"
+              alt={SITE.name}
+              fill
+              sizes="80px"
+              className="object-cover"
+            />
+          </div>
+          <p className="text-cream font-display text-sm tracking-widest uppercase leading-snug">
+            Paso la Cadena, Durazno
+          </p>
+        </div>
 
         {/* Título principal */}
         <h1 className="text-white text-6xl sm:text-7xl md:text-8xl leading-none mb-6 max-w-2xl">
