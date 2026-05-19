@@ -12,7 +12,8 @@ export const SITE = {
   mapEmbed:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.0!2d-56.5226!3d-33.3694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDIyJzA5LjkiUyA1NsKwMzEnMjEuNCJX!5e0!3m2!1ses!2suy!4v1680000000000",
   hours: "Lun–Sáb: 8:00 a 17:00",
-  facebook: "https://facebook.com/",
+  facebook: "https://www.facebook.com/p/Bloquera-La-Cadena-61575834790786/",
+  instagram: "https://www.instagram.com/bloqueralacadena",
   zone: "Durazno ciudad y zona rural",
 };
 
@@ -73,7 +74,7 @@ export const PRODUCTS: Product[] = [
     use: "Vigas y encadenados en muros de 15",
     pricePuesto: "$50",
     priceLevantar: "$45",
-    image: null,
+    image: "/images/bloque u de 15.jpeg",
   },
   {
     id: "monoblock-19",

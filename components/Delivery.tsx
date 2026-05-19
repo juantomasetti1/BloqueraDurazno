@@ -4,9 +4,9 @@ import { waLink } from "./waLink";
 export default function Delivery() {
   return (
     <section id="entregas" className="bg-white py-20">
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto px-4">
         {/* Text */}
-        <div>
+        <div className="max-w-2xl">
           <p className="text-brand font-display text-base tracking-widest uppercase mb-2">
             Entregas & Logística
           </p>
@@ -37,28 +37,6 @@ export default function Delivery() {
             </svg>
             Coordinar entrega por WhatsApp
           </a>
-        </div>
-
-        {/* Zone info box */}
-        <div className="bg-cream-light border-l-4 border-brand p-8">
-          <h3 className="font-display text-3xl text-brand mb-6">Zona de cobertura</h3>
-          <div className="space-y-3 text-concrete-700">
-            {[
-              "Durazno ciudad",
-              "Sarandí del Yí",
-              "Puebla del Norte",
-              "La Paloma",
-              "Zona rural — consultar",
-            ].map((z) => (
-              <div key={z} className="flex items-center gap-3">
-                <span className="w-2 h-2 bg-brand rounded-full flex-shrink-0" />
-                <span>{z}</span>
-              </div>
-            ))}
-          </div>
-          <p className="mt-6 text-concrete-500 text-sm">
-            Para zonas fuera de la lista, contactanos. Podemos coordinar según el volumen del pedido.
-          </p>
         </div>
       </div>
     </section>
