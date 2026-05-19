@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { SITE } from "@/data/site";
 import { waLink } from "./waLink";
@@ -18,8 +19,20 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-brand shadow-lg">
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="#" className="font-display text-cream text-xl tracking-widest uppercase">
-          {SITE.name}
+        <Link href="#" className="flex items-center gap-3">
+          {/* Círculo recortado para mostrar solo el espiral del centro */}
+          <div className="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0 border-2 border-cream/30">
+            <Image
+              src="/images/logo.jpeg"
+              alt=""
+              fill
+              sizes="40px"
+              className="object-cover object-center scale-[2.2]"
+            />
+          </div>
+          <span className="font-display text-cream text-xl tracking-widest uppercase">
+            {SITE.name}
+          </span>
         </Link>
 
         {/* Desktop nav */}
