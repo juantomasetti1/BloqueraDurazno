@@ -35,7 +35,7 @@ export const PRODUCTS: Product[] = [
     use: "Paredes y muros en general",
     pricePuesto: "$28",
     priceLevantar: "$25",
-    image: "/images/WhatsApp Image 2026-05-05 at 11.33.38 (1).jpeg",
+    image: "/images/WhatsApp Image 2026-05-05 at 11.33.38.jpeg",
     featured: true,
   },
   {
@@ -45,7 +45,7 @@ export const PRODUCTS: Product[] = [
     use: "Vigas de encadenado y dinteles",
     pricePuesto: "$40",
     priceLevantar: "$35",
-    image: "/images/WhatsApp Image 2026-05-05 at 11.33.40.jpeg",
+    image: "/images/WhatsApp Image 2026-05-05 at 11.33.39 (3).jpeg",
     featured: true,
   },
   {
@@ -55,7 +55,7 @@ export const PRODUCTS: Product[] = [
     use: "Muros exteriores y estructurales",
     pricePuesto: "$35",
     priceLevantar: "$32",
-    image: "/images/WhatsApp Image 2026-05-05 at 11.33.38.jpeg",
+    image: "/images/WhatsApp Image 2026-05-05 at 11.33.38 (1).jpeg",
   },
   {
     id: "monoblock-15",
@@ -71,9 +71,9 @@ export const PRODUCTS: Product[] = [
     name: "Bloque U de 15",
     measures: "39 × 19 × 15",
     use: "Vigas y encadenados en muros de 15",
-    pricePuesto: null,
-    priceLevantar: null,
-    image: "/images/WhatsApp Image 2026-05-05 at 11.33.39 (3).jpeg",
+    pricePuesto: "$50",
+    priceLevantar: "$45",
+    image: null,
   },
   {
     id: "monoblock-19",
@@ -90,9 +90,9 @@ export const PRODUCTS: Product[] = [
     name: "Bloque U de 19",
     measures: "39 × 19 × 19",
     use: "Vigas y encadenados en muros de 19",
-    pricePuesto: null,
-    priceLevantar: null,
-    image: "/images/WhatsApp Image 2026-05-05 at 11.33.42 (1).jpeg",
+    pricePuesto: "$55",
+    priceLevantar: "$50",
+    image: "/images/bloque u de 19.jpeg",
   },
 ];
 
