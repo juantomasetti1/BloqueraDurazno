@@ -15,10 +15,6 @@ export default function Catalog() {
             <h2 className="text-concrete-900 text-5xl md:text-6xl">Catálogo</h2>
             <div className="w-16 h-1 bg-brand mt-4" />
           </div>
-          <p className="text-concrete-500 max-w-sm text-sm leading-relaxed">
-            Todos nuestros bloques se fabrican con hormigón de alta resistencia.
-            Los precios pueden variar según volumen — consultanos.
-          </p>
         </div>
 
         {/* Grid */}
