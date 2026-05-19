@@ -26,7 +26,7 @@ export default function Navbar() {
               src="/images/logo.jpeg"
               alt=""
               fill
-              sizes="40px"
+              sizes="220px"
               className="object-cover object-center scale-[2.2]"
             />
           </div>
