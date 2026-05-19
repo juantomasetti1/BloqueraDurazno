@@ -20,14 +20,13 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo */}
         <Link href="#" className="flex items-center gap-3">
-          {/* Círculo recortado para mostrar solo el espiral del centro */}
-          <div className="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0 border-2 border-cream/30">
+          <div className="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
             <Image
-              src="/images/logo.jpeg"
+              src="/images/espiral.jpeg"
               alt=""
               fill
-              sizes="220px"
-              className="object-cover object-center scale-[2.2]"
+              sizes="40px"
+              className="object-cover object-center"
             />
           </div>
           <span className="font-display text-cream text-xl tracking-widest uppercase">
