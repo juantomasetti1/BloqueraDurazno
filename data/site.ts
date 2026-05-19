@@ -10,8 +10,12 @@ export const SITE = {
   whatsappMsg: "Hola! Consulto por bloques de hormigón.",
   address: "Paso la Cadena, Durazno, Uruguay",
   mapEmbed:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.0!2d-56.5226!3d-33.3694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDIyJzA5LjkiUyA1NsKwMzEnMjEuNCJX!5e0!3m2!1ses!2suy!4v1680000000000",
-  hours: "Lun–Sáb: 8:00 a 17:00",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.0!2d-56.5191442!3d-33.446946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a6c1625565a649%3A0x79def90ed5a61a19!2sBloquera%20La%20Cadena!5e0!3m2!1ses!2suy!4v1680000000000",
+  hours: [
+    "Lun–Mié: 8:00–12:00",
+    "Jue–Vie: 8:00–12:00 y 14:00–18:00",
+    "Sáb: 8:00–13:00",
+  ],
   facebook: "https://www.facebook.com/p/Bloquera-La-Cadena-61575834790786/",
   instagram: "https://www.instagram.com/bloqueralacadena",
   zone: "Durazno ciudad y zona rural",
