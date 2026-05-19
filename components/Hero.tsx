@@ -22,6 +22,15 @@ export default function Hero() {
       {/* Barra de acento */}
       <div className="absolute left-0 top-0 h-full w-2 bg-cream z-10" />
 
+      {/* Logo decorativo de fondo (derecha) */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/images/logo.jpeg"
+        alt=""
+        aria-hidden="true"
+        className="absolute right-0 top-1/2 -translate-y-1/2 w-64 h-64 md:w-[420px] md:h-[420px] rounded-full object-cover opacity-[0.07] pointer-events-none z-[1]"
+      />
+
       {/* Contenido */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-20 md:py-28 w-full">
         <div className="flex items-center gap-4 mb-10">
