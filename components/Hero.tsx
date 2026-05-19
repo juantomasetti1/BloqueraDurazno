@@ -2,6 +2,7 @@ import Image from "next/image";
 import { SITE } from "@/data/site";
 import { waLink } from "./waLink";
 
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden min-h-[88vh] flex items-center">
@@ -21,37 +22,11 @@ export default function Hero() {
       {/* Barra de acento */}
       <div className="absolute left-0 top-0 h-full w-2 bg-cream z-10" />
 
-      {/* Logo decorativo de fondo (derecha) */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/images/logo.jpeg"
-        alt=""
-        aria-hidden="true"
-        className="absolute right-0 top-1/2 -translate-y-1/2 w-64 h-64 md:w-[420px] md:h-[420px] rounded-full object-cover opacity-[0.07] pointer-events-none z-[1]"
-      />
-
       {/* Contenido */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-20 md:py-28 w-full">
-        {/* Logo + nombre */}
-        <div className="flex items-center gap-4 mb-10">
-          <div className="relative w-20 h-20 rounded-full overflow-hidden border-4 border-cream flex-shrink-0">
-            <Image
-              src="/images/logo.jpeg"
-              alt={SITE.name}
-              fill
-              sizes="80px"
-              className="object-cover"
-            />
-          </div>
-          <div>
-            <p className="text-cream-dark font-display text-sm tracking-widest uppercase leading-tight">
-              Paso la Cadena, Durazno
-            </p>
-            <p className="text-white font-display text-2xl md:text-3xl tracking-wider uppercase leading-tight">
-              {SITE.name}
-            </p>
-          </div>
-        </div>
+        <p className="text-cream font-display text-sm tracking-widest uppercase mb-8">
+          Paso la Cadena, Durazno
+        </p>
 
         {/* Título principal */}
         <h1 className="text-white text-6xl sm:text-7xl md:text-8xl leading-none mb-6 max-w-2xl">

@@ -1,7 +1,7 @@
 import React from "react";
 import { SITE } from "@/data/site";
 
-type InfoItem = { label: string; value: string | string[]; icon: React.ReactNode };
+type InfoItem = { label: string; value: string; icon: React.ReactNode };
 
 const items: InfoItem[] = [
   {
@@ -51,11 +51,7 @@ export default function QuickInfo() {
             <span className="text-cream opacity-75 flex-shrink-0">{it.icon}</span>
             <div>
               <p className="text-cream-dark text-xs font-semibold uppercase tracking-wider">{it.label}</p>
-              {Array.isArray(it.value) ? (
-                it.value.map((v) => <p key={v} className="text-white font-bold text-xs leading-snug">{v}</p>)
-              ) : (
-                <p className="text-white font-bold text-sm">{it.value}</p>
-              )}
+              <p className="text-white font-bold text-sm">{it.value}</p>
             </div>
           </div>
         ))}
