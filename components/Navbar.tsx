@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo */}
         <Link href="#" className="flex items-center gap-3">
-          <img src="/images/espiral.svg" alt="" width={40} height={40} className="flex-shrink-0" />
+          <img src="/images/espiral Blanco.png" alt="" width={40} height={40} className="flex-shrink-0" />
           <span className="font-bebas text-cream text-2xl tracking-widest">
             {SITE.name}
           </span>
