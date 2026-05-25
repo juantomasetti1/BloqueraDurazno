@@ -7,11 +7,11 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-cream-dark text-sm">
         <div className="flex items-center gap-3">
           <Image
-            src="/images/espiral.jpeg"
+            src="/images/espiral Blanco.png"
             alt="Bloquera La Cadena"
-            width={36}
-            height={36}
-            className="rounded-full object-cover"
+            width={40}
+            height={40}
+            className="object-contain"
           />
           <span className="font-display text-cream uppercase tracking-widest">{SITE.name}</span>
         </div>
