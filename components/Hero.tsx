@@ -5,19 +5,7 @@ import { waLink } from "./waLink";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-[88vh] flex items-center">
-      {/* Foto de fondo */}
-      <Image
-        src="/images/WhatsApp Image 2026-05-05 at 11.33.38.jpeg"
-        alt=""
-        fill
-        sizes="100vw"
-        className="object-cover"
-        priority
-      />
-
-      {/* Overlay azul */}
-      <div className="absolute inset-0 bg-brand/80" />
+    <section className="relative overflow-hidden min-h-[88vh] flex items-center bg-brand">
 
       {/* Barra de acento */}
       <div className="absolute left-0 top-0 h-full w-2 bg-cream z-10" />
