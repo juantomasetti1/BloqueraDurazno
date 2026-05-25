@@ -6,6 +6,18 @@ import { waLink } from "./waLink";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden min-h-[88vh] flex items-center bg-brand">
+      {/* Foto de fondo */}
+      <Image
+        src="/images/WhatsApp Image 2026-05-05 at 11.33.38.jpeg"
+        alt=""
+        fill
+        sizes="100vw"
+        className="object-cover object-center"
+        priority
+      />
+
+      {/* Overlay azul */}
+      <div className="absolute inset-0 bg-brand/80" />
 
       {/* Barra de acento */}
       <div className="absolute left-0 top-0 h-full w-2 bg-cream z-10" />
@@ -21,21 +33,10 @@ export default function Hero() {
 
       {/* Contenido */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-20 md:py-28 w-full">
-        <div className="flex items-center gap-4 mb-10">
-          <div className="relative w-20 h-20 rounded-full overflow-hidden border-4 border-cream flex-shrink-0">
-            <Image
-              src="/images/logo.jpeg"
-              alt={SITE.name}
-              fill
-              sizes="80px"
-              className="object-cover"
-            />
-          </div>
-          <div>
-            <p className="text-cream font-display text-xl md:text-2xl tracking-widest uppercase leading-tight">
-              Paso la Cadena, Durazno
-            </p>
-          </div>
+        <div className="mb-10">
+          <p className="text-cream font-display text-xl md:text-2xl tracking-widest uppercase leading-tight">
+            Paso la Cadena, Durazno
+          </p>
         </div>
 
         {/* Título principal */}
