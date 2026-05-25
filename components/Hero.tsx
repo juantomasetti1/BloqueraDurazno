@@ -44,7 +44,7 @@ export default function Hero() {
             />
           </div>
           <div>
-            <p className="text-cream font-display text-sm tracking-widest uppercase leading-tight">
+            <p className="text-cream font-display text-xl md:text-2xl tracking-widest uppercase leading-tight">
               Paso la Cadena, Durazno
             </p>
           </div>
