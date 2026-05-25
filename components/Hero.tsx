@@ -6,18 +6,15 @@ import { waLink } from "./waLink";
 export default function Hero() {
   return (
     <section
-      className="relative overflow-hidden min-h-[88vh] flex items-center"
+      className="relative overflow-hidden min-h-[88vh] flex items-center bg-brand"
       style={{
-        backgroundImage: "url('/images/WhatsApp Image 2026-05-05 at 11.33.38.jpeg')",
+        backgroundImage: "url('/images/WhatsApp%20Image%202026-05-05%20at%2011.33.38.jpeg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
       {/* Overlay azul */}
       <div className="absolute inset-0 bg-brand/80" />
-
-      {/* Barra de acento */}
-      <div className="absolute left-0 top-0 h-full w-2 bg-cream z-10" />
 
       {/* Logo decorativo de fondo (derecha) */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
