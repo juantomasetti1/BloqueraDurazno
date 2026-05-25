@@ -44,11 +44,8 @@ export default function Hero() {
             />
           </div>
           <div>
-            <p className="text-cream-dark font-display text-sm tracking-widest uppercase leading-tight">
+            <p className="text-cream font-display text-sm tracking-widest uppercase leading-tight">
               Paso la Cadena, Durazno
-            </p>
-            <p className="text-white font-display text-2xl md:text-3xl tracking-wider uppercase leading-tight">
-              {SITE.name}
             </p>
           </div>
         </div>
@@ -83,11 +80,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-cream-dark text-xs uppercase tracking-widest flex flex-col items-center gap-2 z-10">
-        <span>Ver catálogo</span>
-        <div className="w-px h-8 bg-cream-dark animate-bounce" />
-      </div>
     </section>
   );
 }

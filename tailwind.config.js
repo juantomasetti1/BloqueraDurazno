@@ -37,6 +37,7 @@ module.exports = {
       },
       fontFamily: {
         display: ["'Barlow Condensed'", "sans-serif"],
+        bebas:   ["'Bebas Neue'", "sans-serif"],
         body:    ["'DM Sans'", "sans-serif"],
       },
     },
