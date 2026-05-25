@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <mask id="m">
+      <!-- hexágono blanco = mostrar azul; camino negro = cortar transparente -->
+      <polygon points="6,50 28,12 72,12 94,50 72,88 28,88" fill="white"/>
+      <path
+        d="M 14,50 L 32,19 L 68,19 L 86,50 L 68,81 L 32,81 L 28,50 L 39,31 L 61,31 L 72,50 L 61,69 L 39,69 L 42,50 L 46,43 L 54,43 L 58,50 L 54,57 L 46,57"
+        fill="none"
+        stroke="black"
+        stroke-width="10"
+        stroke-linejoin="round"
+        stroke-linecap="round"
+      />
+    </mask>
+  </defs>
+  <!-- Hexágono azul con espiral recortada (fondo transparente) -->
+  <polygon points="6,50 28,12 72,12 94,50 72,88 28,88" fill="#1b3a6b" mask="url(#m)"/>
+</svg>

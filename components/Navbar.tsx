@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { SITE } from "@/data/site";
 import { waLink } from "./waLink";
@@ -20,15 +19,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo */}
         <Link href="#" className="flex items-center gap-3">
-          <div className="relative w-10 h-10 flex-shrink-0">
-            <Image
-              src="/images/espiral.jpeg"
-              alt=""
-              fill
-              sizes="40px"
-              className="object-contain"
-            />
-          </div>
+          <img src="/images/espiral.svg" alt="" width={40} height={40} className="flex-shrink-0" />
           <span className="font-bebas text-cream text-2xl tracking-widest">
             {SITE.name}
           </span>
