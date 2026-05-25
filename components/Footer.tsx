@@ -9,8 +9,8 @@ export default function Footer() {
           <Image
             src="/images/espiral Blanco.png"
             alt="Bloquera La Cadena"
-            width={40}
-            height={40}
+            width={64}
+            height={64}
             className="object-contain"
           />
           <span className="font-display text-cream uppercase tracking-widest">{SITE.name}</span>
