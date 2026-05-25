@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { SITE } from "@/data/site";
 import { waLink } from "./waLink";
@@ -19,7 +20,15 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
         {/* Logo */}
         <Link href="#" className="flex items-center gap-3">
-          <SpiralLogo className="w-10 h-10 flex-shrink-0" />
+          <div className="relative w-10 h-10 flex-shrink-0">
+            <Image
+              src="/images/espiral.jpeg"
+              alt=""
+              fill
+              sizes="40px"
+              className="object-contain"
+            />
+          </div>
           <span className="font-bebas text-cream text-2xl tracking-widest">
             {SITE.name}
           </span>
@@ -85,21 +94,5 @@ export default function Navbar() {
         </div>
       )}
     </header>
-  );
-}
-
-function SpiralLogo({ className }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" className={className} aria-hidden="true">
-      <polygon points="6,50 28,12 72,12 94,50 72,88 28,88" fill="#1b3a6b"/>
-      <path
-        d="M 15,50 L 32,20 L 68,20 L 85,50 L 68,80 L 32,80 L 29,50 L 39,32 L 61,32 L 71,50 L 61,68 L 39,68 L 43,50 L 46,44 L 54,44 L 57,50 L 54,56 L 46,56"
-        fill="none"
-        stroke="#e8dcc8"
-        strokeWidth="8"
-        strokeLinejoin="round"
-        strokeLinecap="round"
-      />
-    </svg>
   );
 }
