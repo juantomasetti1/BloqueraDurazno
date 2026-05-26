@@ -4,6 +4,7 @@ import { SITE } from "@/data/site";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.bloqueralacadena.uy"),
   title: `${SITE.name} | Bloques de hormigón en Durazno, Uruguay`,
   description:
     "Fabricación y venta de bloques de hormigón en Durazno, Uruguay. Bloque 12, 15 y 20 cm. Entrega en zona. Consultá precios por WhatsApp.",
@@ -19,6 +20,14 @@ export const metadata: Metadata = {
     description: "Fabricación y venta de bloques de hormigón. Entrega en Durazno y zona.",
     locale: "es_UY",
     type: "website",
+    images: [
+      {
+        url: "/images/WhatsApp%20Image%202026-05-05%20at%2011.33.38.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Bloques de hormigón Bloquera La Cadena",
+      },
+    ],
   },
 };
 
