@@ -41,7 +41,6 @@ export const PRODUCTS: Product[] = [
     images: [
       "/images/imgBloqueComun/WhatsApp Image 2026-05-30 at 07.43.42.jpeg",
       "/images/imgBloqueComun/WhatsApp Image 2026-05-30 at 07.43.43 (1).jpeg",
-      "/images/imgBloqueComun/WhatsApp Image 2026-05-30 at 07.43.43 (2).jpeg",
       "/images/imgBloqueComun/WhatsApp Image 2026-05-30 at 07.43.43 (3).jpeg",
       "/images/imgBloqueComun/WhatsApp Image 2026-05-30 at 07.43.43.jpeg",
       "/images/imgBloqueComun/WhatsApp Image 2026-05-30 at 07.43.44.jpeg",
