@@ -25,6 +25,7 @@ export type Product = {
   pricePuesto: string | null;    // precio puesto en obra (null = consultar)
   priceLevantar: string | null;  // precio a levantar en fábrica (null = consultar)
   image: string | null;
+  images?: string[];             // galería de fotos (si tiene más de una)
   featured?: boolean;
 };
 
@@ -36,7 +37,15 @@ export const PRODUCTS: Product[] = [
     use: "Paredes y muros en general",
     pricePuesto: "$28",
     priceLevantar: "$25",
-    image: "/images/WhatsApp Image 2026-05-05 at 11.33.38.jpeg",
+    image: "/images/imgBloqueComun/WhatsApp Image 2026-05-30 at 07.43.42.jpeg",
+    images: [
+      "/images/imgBloqueComun/WhatsApp Image 2026-05-30 at 07.43.42.jpeg",
+      "/images/imgBloqueComun/WhatsApp Image 2026-05-30 at 07.43.43 (1).jpeg",
+      "/images/imgBloqueComun/WhatsApp Image 2026-05-30 at 07.43.43 (2).jpeg",
+      "/images/imgBloqueComun/WhatsApp Image 2026-05-30 at 07.43.43 (3).jpeg",
+      "/images/imgBloqueComun/WhatsApp Image 2026-05-30 at 07.43.43.jpeg",
+      "/images/imgBloqueComun/WhatsApp Image 2026-05-30 at 07.43.44.jpeg",
+    ],
     featured: true,
   },
   {
