@@ -1,79 +1,21 @@
-"use client";
-
-import { useState } from "react";
 import { Product } from "@/data/site";
 import { waLink } from "./waLink";
 
 export default function ProductCard({ product }: { product: Product }) {
-  const allImages = product.images?.length
-    ? product.images
-    : product.image
-    ? [product.image]
-    : [];
-
-  const [idx, setIdx] = useState(0);
-
-  const prev = () => setIdx((i) => (i - 1 + allImages.length) % allImages.length);
-  const next = () => setIdx((i) => (i + 1) % allImages.length);
-
   const msg = `Hola! Me interesa el ${product.name} (${product.measures} cm). ¿Podría darme información y precio?`;
 
   return (
     <div className="bg-white border border-concrete-200 overflow-hidden group hover:shadow-lg transition-shadow flex flex-col">
-      {/* Image gallery */}
+      {/* Image / placeholder */}
       <div className="relative bg-concrete-100 h-48 flex items-center justify-center overflow-hidden">
-        {allImages.length > 0 ? (
-          <>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={allImages[idx]}
-              alt={`${product.name} ${idx + 1}`}
-              className="object-cover w-full h-full"
-            />
-
-            {allImages.length > 1 && (
-              <>
-                <button
-                  onClick={prev}
-                  aria-label="Imagen anterior"
-                  className="absolute left-1 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/65 text-white rounded-full w-7 h-7 flex items-center justify-center transition-colors z-10"
-                >
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="15 18 9 12 15 6" />
-                  </svg>
-                </button>
-                <button
-                  onClick={next}
-                  aria-label="Imagen siguiente"
-                  className="absolute right-1 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/65 text-white rounded-full w-7 h-7 flex items-center justify-center transition-colors z-10"
-                >
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <polyline points="9 18 15 12 9 6" />
-                  </svg>
-                </button>
-
-                {/* Dots */}
-                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1 z-10">
-                  {allImages.map((_, i) => (
-                    <button
-                      key={i}
-                      onClick={() => setIdx(i)}
-                      aria-label={`Ir a imagen ${i + 1}`}
-                      className={`w-1.5 h-1.5 rounded-full transition-colors ${
-                        i === idx ? "bg-white" : "bg-white/50"
-                      }`}
-                    />
-                  ))}
-                </div>
-              </>
-            )}
-          </>
+        {product.image ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={product.image} alt={product.name} className="object-cover w-full h-full" />
         ) : (
           <BlockPlaceholder />
         )}
-
         {product.featured && (
-          <span className="absolute top-3 left-3 bg-brand text-cream text-xs font-bold px-2 py-1 uppercase tracking-wider z-10">
+          <span className="absolute top-3 left-3 bg-brand text-cream text-xs font-bold px-2 py-1 uppercase tracking-wider">
             Más vendido
           </span>
         )}
